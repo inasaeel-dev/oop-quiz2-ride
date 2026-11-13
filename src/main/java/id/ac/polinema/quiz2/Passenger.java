@@ -43,6 +43,9 @@ public class Passenger {
      * @param name nama baru
      */
     public void setName(String name) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        if(name != null && !name.trim().isEmpty()){
+            this.name = name;
+        }
+        // throw new UnsupportedOperationException("Not implemented yet");
     }
 }
