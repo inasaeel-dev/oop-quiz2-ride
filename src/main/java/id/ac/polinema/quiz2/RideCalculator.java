@@ -39,8 +39,11 @@ public class RideCalculator {
     public static double totalInsurance(List<Ride> orders) {
         double total = 0;
         for (Ride order : orders){
-            
+            if (order instanceof Insurable){
+                total += ((Insurable) order).insuranceFee();
+            }
         }
+        return total;
         // throw new UnsupportedOperationException("Not implemented yet");
     }
 
