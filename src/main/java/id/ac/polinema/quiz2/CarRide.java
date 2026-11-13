@@ -7,7 +7,7 @@ public class CarRide extends Ride implements Insurable {
   }
   @Override 
   public double calculateFare(){
-    return getDistanceKm();
+    return getDistanceKm() * 4.000;
   }
   @Override 
   public double insuranceFee(){
