@@ -11,8 +11,8 @@ package id.ac.polinema.quiz2;
  * Semua field harus private.
  */
 public class Passenger {
-    String passengerId;
-    String name;
+    private String passengerId;
+    private String name;
 
     /**
      * Menyimpan kedua parameter ke field.
