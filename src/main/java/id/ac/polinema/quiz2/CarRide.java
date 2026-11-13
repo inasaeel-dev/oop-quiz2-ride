@@ -11,6 +11,6 @@ public class CarRide extends Ride implements Insurable {
   }
   @Override 
   public double insuranceFee(){
-    return insuranceFee();
+    return 5000.0;
   }
 }
