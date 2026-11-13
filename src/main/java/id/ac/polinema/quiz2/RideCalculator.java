@@ -20,7 +20,12 @@ public class RideCalculator {
      * @return jumlah semua tarif, atau 0 bila daftar kosong
      */
     public static double totalFare(List<Ride> orders) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        double total = 0;
+        for (Ride order : orders){
+            total += order.calculateFare();
+        }
+        return total;
+        // throw new UnsupportedOperationException("Not implemented yet");
     }
 
     /**
@@ -32,7 +37,11 @@ public class RideCalculator {
      * @return jumlah biaya asuransi perjalanan, atau 0 bila tidak ada yang punya
      */
     public static double totalInsurance(List<Ride> orders) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        double total = 0;
+        for (Ride order : orders){
+            
+        }
+        // throw new UnsupportedOperationException("Not implemented yet");
     }
 
     /**
