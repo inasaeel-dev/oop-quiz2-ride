@@ -56,7 +56,11 @@ public class RideCalculator {
      * @throws InvalidDistanceException bila jarak tidak valid
      */
     public static void validate(Ride order) throws InvalidDistanceException {
-        throw new UnsupportedOperationException("Not implemented yet");
+        double distance = order.getDistanceKm();
+        if (distance <= 0 || distance > 50){
+            throw new InvalidDistanceException("Jarak tidak valid: " + distance);
+        }
+        // throw new UnsupportedOperationException("Not implemented yet");
     }
 
     /**
@@ -66,6 +70,12 @@ public class RideCalculator {
      * @return true bila valid, false bila validate melempar InvalidDistanceException
      */
     public static boolean isAcceptable(Ride order) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        try{
+            validate(order);
+            return true;
+        } catch (InvalidDistanceException e){
+            return false;
+        }
+        // throw new UnsupportedOperationException("Not implemented yet");
     }
 }
