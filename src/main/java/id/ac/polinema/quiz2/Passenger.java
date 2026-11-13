@@ -11,6 +11,8 @@ package id.ac.polinema.quiz2;
  * Semua field harus private.
  */
 public class Passenger {
+    String passengerId;
+    String name;
 
     /**
      * Menyimpan kedua parameter ke field.
@@ -19,15 +21,19 @@ public class Passenger {
      * @param name nama penumpang
      */
     public Passenger(String passengerId, String name) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        this.passengerId = passengerId;
+        this.name = name;
+        // throw new UnsupportedOperationException("Not implemented yet");
     }
 
     public String getPassengerId() {
-        throw new UnsupportedOperationException("Not implemented yet");
+        return passengerId;
+        // throw new UnsupportedOperationException("Not implemented yet");
     }
 
     public String getName() {
-        throw new UnsupportedOperationException("Not implemented yet");
+        return name;
+        // throw new UnsupportedOperationException("Not implemented yet");
     }
 
     /**
