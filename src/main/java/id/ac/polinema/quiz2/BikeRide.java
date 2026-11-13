@@ -7,6 +7,6 @@ public class BikeRide extends Ride {
   }
   @Override 
     public double calculateFare(){
-      return getDistanceKm() * 
+      return getDistanceKm()
   }
 }
